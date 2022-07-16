@@ -15,3 +15,13 @@
 ├── pinyin_simp.schema.yaml     #袖珍简化字文件
 ├── rime.lua                    #lua脚本,内含时间日期
 ```
+
+
+
+
+# 文件配置来自
+rime/rime-pinyin-simp
+iDvel/rime-ice
+BlindingDark/rime-easy-en
+wongdean/rime-settings
+LufsX/rime
