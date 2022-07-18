@@ -5,7 +5,6 @@
 name: smaxad47
 version: "1"
 sort: by_weight
-vocabulary: essay-zh-hans
 
 import_tables:
   - cn_dicts/pinyin_simp # 袖珍简化字拼音
