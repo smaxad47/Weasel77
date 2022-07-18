@@ -1,0 +1,25 @@
+patch:
+  schema:
+    name: 袖珍简化字拼音改
+  "translator/dictionary": smaxad47
+  engine/+:
+    translators/+:
+      - table_translator@custom_phrase
+      - lua_translator@date_translator
+      - table_translator@melt_eng
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
+  melt_eng:
+    dictionary: melt_eng # 挂载英文主词库 melt_eng.dict.yaml
+    spelling_hints: 9
+    enable_completion: true # 补全提示
+    enable_sentence: false  # 禁止造句
+    enable_user_dict: false # 禁用用户词典
+    initial_quality: 1.1
+  
+

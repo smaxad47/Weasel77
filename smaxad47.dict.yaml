@@ -1,0 +1,16 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: smaxad47
+version: "1"
+sort: by_weight
+vocabulary: essay-zh-hans
+
+import_tables:
+  - cn_dicts/pinyin_simp # 袖珍简化字拼音
+  - cn_dicts/IT # IT
+  - cn_dicts/net # 网络流行语
+  - cn_dicts/touhou # 东方 Project
+...
+
