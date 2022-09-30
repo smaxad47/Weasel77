@@ -1,0 +1,18 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Mon Jul 18 10:30:09 2022"
+  rime_version: 1.5.3
+patch:
+  app_options:
+    cmd.exe:
+      ascii_mode: true # 西文模式
+    code.exe:
+      ascii_mode: true
+    conhost.exe:
+      ascii_mode: true
+  
+  "style/color_scheme": psionics
+  "style/font_face": "Microsoft YaHei"
+  "style/inline_preedit": true

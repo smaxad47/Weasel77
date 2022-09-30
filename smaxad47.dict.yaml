@@ -7,7 +7,10 @@ version: "1"
 sort: by_weight
 
 import_tables:
-  - cn_dicts/pinyin_simp # 袖珍简化字拼音
+  - cn_dicts/8105    # 《通用汉字规范表》8105 字字表
+  - cn_dicts/main    # 基础词库
+  - cn_dicts/ext     # 扩展词库，建议与基础词库一同使用
+  - cn_dicts/others  # 一些杂项
   - cn_dicts/IT # IT
   - cn_dicts/net # 网络流行语
   - cn_dicts/touhou # 东方 Project
