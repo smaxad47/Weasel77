@@ -1,7 +1,7 @@
 # Rime dictionary
 # encoding: utf-8
 #
-# https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters
+#
 # https://github.com/iDvel/rime-ice
 # ------- 《通用规范汉字表》8105 字字表 -------
 #
@@ -9,15 +9,20 @@
 # 使用的数据：https://zh.wiktionary.org/wiki/Appendix:%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3%E7%B4%A2%E5%BC%95/%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E6%B1%89%E5%AD%97%E8%A1%A8
 # 使用的字频：[25亿字语料汉字字频表](https://faculty.blcu.edu.cn/xinghb/zh_CN/article/167473/content/1437.htm)
 #
+#
 # 这个数据、《现代汉语词典》、《现代汉语规范词典》之间的注音并不都相同，使用前请注意，参照《现汉》增加了一些原数据中没有的读音。
-# 排序：拼音顺序、权重逆序
 #
 #
 # 注音：
 # 「nüe 虐」「lüe 略」使用「nve」「lve」的注音。
 # 「句、去、需、与」使用「ju qu xu yu」的注音。
-# 删除原数据「桲po」的 bo 音。
-#
+# 删除原数据的「桲bo」音。
+# 删除「呷ga」
+# 删除「芥gai」
+# 删除「著zhuo」
+# 删除「虾ha」
+# 艴bo → fu
+# 嬛xuan → huan，放弃其他音，给「甄嬛」用。
 #
 # 多音字权重问题：
 # 在 Rime 的自动注音程序中，权重比小于等于 5% 的多音字不会参与自动注音。
@@ -26,9 +31,8 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 main 中手动注音。
 ---
 name: 8105
-version: "2022-09-01"
+version: "2022-11-03"
 sort: by_weight
-vocabulary: essay-zh-hans
 ...
 ### 按需启用
 # 「这、那」的口语读音
@@ -36,14 +40,6 @@ vocabulary: essay-zh-hans
 # 那	nei	9929703
 # 「贲 ben bi」的 fei 音《现汉》没有收录，《现规》表姓氏。
 # 贲	fei	1
-# 「呷呷ga」是「嘎嘎」的异形词
-# 呷	ga	1
-# 《现汉》6 开始已经取消收录 gai 音
-# 芥	gai	1
-# 如果「执着zhuo」是正确的话，「著 zhuo」音已经没有在使用了。
-# 著	zhuo	1
-# 「虾蟆」是「蛤蟆」的异形词
-# 虾	ha	1
 
 
 ### 扩展，不在《通用规范汉字表》的字，注释掉的这几行已经加入到下面并调整到合适的权重了
@@ -61,6 +57,7 @@ vocabulary: essay-zh-hans
 # 祂	ta
 # 觍	tian
 # 𪨊	song
+# 磺	huang
 
 
 ### 小时候没学过的拼音。。。
@@ -68,17 +65,16 @@ vocabulary: essay-zh-hans
 # 嗯	ng	在固顶字改为「那个、哪个」了
 # 噷	hm	在固顶字里置顶了
 # 呣	m	在固顶字里放到第三位了
-嗯	eng	179528
-哼	hng	255327
-# 表示打招呼或惊诧时的语气词，繁体有个「誒」，但《现汉》《现规》《通用汉字规范表》都没有收录「诶」，大陆用的是「欸」。
+# 欻	chua	放到固顶字里了，不参与造词，这个字和 chu a 冲突太多，并总占据第一个候选项
+# 哼	hng	放到固顶字里置顶了
+嗯	eng	9179528
 欸	ei	534
 哟	yo	59051
 唷	yo	68308
 育	yo	1
-欻	chua	1
 
 
-### 8105
+### 字表
 # +_+
 啊	a	2366043
 阿	a	867275
@@ -296,6 +292,7 @@ vocabulary: essay-zh-hans
 孛	bei	3274
 焙	bei	1206
 邶	bei	1064
+陂	bei	947
 钡	bei	386
 褙	bei	243
 碚	bei	151
@@ -513,7 +510,6 @@ vocabulary: essay-zh-hans
 剥	bo	42275
 泊	bo	41521
 簸	bo	9837
-蕃	bo	9570
 帛	bo	8139
 钵	bo	7494
 跛	bo	5214
@@ -534,7 +530,6 @@ vocabulary: essay-zh-hans
 鹁	bo	100
 僰	bo	88
 踣	bo	83
-艴	bo	81
 镈	bo	54
 砵	bo	18
 鲌	bo	14
@@ -542,6 +537,7 @@ vocabulary: essay-zh-hans
 嶓	bo	11
 浡	bo	6
 馞	bo	4
+蕃	bo	1
 欂	bo	0
 袯	bo	0
 𬭛	bo	0
@@ -724,6 +720,7 @@ vocabulary: essay-zh-hans
 徜	chang	2131
 氅	chang	1698
 伥	chang	1014
+裳	chang	1000
 菖	chang	870
 苌	chang	866
 阊	chang	332
@@ -1104,14 +1101,14 @@ vocabulary: essay-zh-hans
 答	da	796906
 达	da	741782
 搭	da	135458
+哒	da	21140
 瘩	da	17347
 嗒	da	16686
-妲	da	12460
-哒	da	11140
 沓	da	8322
 耷	da	8256
 鞑	da	6703
 靼	da	4059
+妲	da	1246
 褡	da	950
 跶	da	550
 怛	da	530
@@ -1499,12 +1496,12 @@ vocabulary: essay-zh-hans
 剟	duo	8
 驮	duo	1
 㙍	duo	0
+饿	e	606677
+呃	e	535105
 恶	e	450813
 额	e	164812
-饿	e	106677
 俄	e	84261
 愕	e	51262
-呃	e	35105
 鹅	e	29947
 噩	e	27969
 娥	e	21944
@@ -1538,8 +1535,8 @@ vocabulary: essay-zh-hans
 堨	e	0
 𥔲	e	0
 𫫇	e	0
+嗯	en	9179528
 恩	en	433653
-嗯	en	179528
 摁	en	8517
 蒽	en	130
 而	er	5075337
@@ -1584,6 +1581,7 @@ vocabulary: essay-zh-hans
 樊	fan	28633
 藩	fan	26539
 梵	fan	17305
+蕃	fan	9570
 幡	fan	7256
 蘩	fan	1942
 璠	fan	1232
@@ -1793,6 +1791,7 @@ vocabulary: essay-zh-hans
 玞	fu	5
 砆	fu	3
 垺	fu	2
+艴	fu	1
 㕮	fu	0
 㳇	fu	0
 琈	fu	0
@@ -2147,6 +2146,7 @@ vocabulary: essay-zh-hans
 蝈	guo	4761
 聒	guo	2542
 帼	guo	2484
+掴	guo	1944
 椁	guo	1368
 虢	guo	885
 埚	guo	372
@@ -2428,13 +2428,13 @@ vocabulary: essay-zh-hans
 槐	huai	25776
 徊	huai	17842
 踝	huai	6039
-欢	huan	908850
+换	huan	996459
 缓	huan	450418
 还	huan	406569
-换	huan	396459
 环	huan	300871
 幻	huan	248831
 唤	huan	138357
+欢	huan	90885
 患	huan	76682
 焕	huan	31989
 桓	huan	28953
@@ -2449,6 +2449,7 @@ vocabulary: essay-zh-hans
 豢	huan	1562
 獾	huan	974
 洹	huan	584
+嬛	huan	405
 缳	huan	311
 萑	huan	287
 鲩	huan	239
@@ -2483,6 +2484,7 @@ vocabulary: essay-zh-hans
 潢	huang	3727
 璜	huang	2543
 遑	huang	2242
+磺	huang	2222
 隍	huang	1797
 肓	huang	1770
 湟	huang	1167
@@ -2587,23 +2589,24 @@ vocabulary: essay-zh-hans
 㸌	huo	0
 佸	huo	0
 𬴃	huo	0
-己	ji	4569251
+级	ji	5992040
+集	ji	5157620
 几	ji	2760667
+及	ji	1839825
 机	ji	1672100
 记	ji	1094800
+季	ji	1028550
 击	ji	1010628
 奇	ji	982596
 系	ji	942245
 即	ji	900101
 急	ji	849907
-及	ji	839825
 极	ji	832554
 计	ji	747431
-级	ji	599204
 激	ji	535171
-集	ji	515762
 继	ji	503302
 基	ji	499224
+己	ji	456925
 既	ji	453256
 际	ji	352008
 纪	ji	335852
@@ -2615,7 +2618,6 @@ vocabulary: essay-zh-hans
 鸡	ji	184249
 寂	ji	144616
 挤	ji	136500
-季	ji	128550
 疾	ji	120121
 忌	ji	113527
 姬	ji	101929
@@ -3316,13 +3318,13 @@ vocabulary: essay-zh-hans
 棵	ke	58780
 壳	ke	41877
 磕	ke	34654
+嗑	ke	31720
 珂	ke	16769
 苛	ke	13000
 轲	ke	8080
 瞌	ke	7311
 坷	ke	6828
 恪	ke	5751
-嗑	ke	4272
 蝌	ke	1549
 颏	ke	1082
 窠	ke	1020
@@ -3474,8 +3476,8 @@ vocabulary: essay-zh-hans
 阔	kuo	77181
 廓	kuo	15567
 蛞	kuo	118
-拉	la	1096796
-啦	la	365599
+啦	la	3655999
+拉	la	109679
 辣	la	82598
 落	la	63259
 垃	la	46134
@@ -3505,13 +3507,13 @@ vocabulary: essay-zh-hans
 俫	lai	64
 铼	lai	15
 梾	lai	9
-兰	lan	565307
 蓝	lan	431855
 烂	lan	148472
 懒	lan	118774
 拦	lan	112670
 篮	lan	92437
 岚	lan	69463
+兰	lan	56530
 栏	lan	52541
 览	lan	35433
 澜	lan	32436
@@ -3583,18 +3585,19 @@ vocabulary: essay-zh-hans
 鳓	le	22
 仂	le	15
 簕	le	8
+嘞	le	1
 雷	lei	560379
 类	lei	542775
 泪	lei	439483
 累	lei	238891
 勒	lei	149722
+嘞	lei	128190
 蕾	lei	83954
 磊	lei	40900
 垒	lei	26075
 擂	lei	22548
 肋	lei	19237
 儡	lei	11246
-嘞	lei	2819
 镭	lei	1854
 羸	lei	1348
 檑	lei	602
@@ -3947,6 +3950,7 @@ vocabulary: essay-zh-hans
 陆	lu	431372
 鲁	lu	232665
 录	lu	164397
+撸	lu	112484
 卢	lu	96170
 鹿	lu	56206
 炉	lu	51848
@@ -3967,7 +3971,6 @@ vocabulary: essay-zh-hans
 卤	lu	5943
 鹭	lu	5180
 泸	lu	3499
-撸	lu	2484
 潞	lu	2185
 橹	lu	1792
 辂	lu	1030
@@ -5138,11 +5141,11 @@ vocabulary: essay-zh-hans
 慬	qin	12
 嵚	qin	8
 梣	qin	3
-情	qing	3879008
+请	qing	8563750
 轻	qing	1720467
 清	qing	1568814
 青	qing	914968
-请	qing	856375
+情	qing	387900
 庆	qing	189750
 晴	qing	147525
 倾	qing	141937
@@ -5462,14 +5465,14 @@ vocabulary: essay-zh-hans
 璱	se	38
 森	sen	243708
 僧	seng	83065
-杀	sha	1095880
-沙	sha	427658
+啥	sha	976190
 傻	sha	248211
+杀	sha	109588
 刹	sha	109543
 莎	sha	107897
-啥	sha	97619
 煞	sha	70229
 纱	sha	63048
+沙	sha	42765
 厦	sha	35375
 霎	sha	21405
 砂	sha	17805
@@ -5486,6 +5489,7 @@ vocabulary: essay-zh-hans
 筛	shai	788300
 色	shai	119311
 山	shan	1526952
+删	shan	1112335
 闪	shan	551016
 善	shan	305341
 扇	shan	86396
@@ -5496,7 +5500,6 @@ vocabulary: essay-zh-hans
 讪	shan	21892
 杉	shan	21508
 陕	shan	18975
-删	shan	12335
 煽	shan	12159
 膳	shan	9913
 跚	shan	6556
@@ -5604,6 +5607,7 @@ vocabulary: essay-zh-hans
 珅	shen	5345
 蜃	shen	4184
 哂	shen	2972
+谌	shen	1820
 娠	shen	1417
 燊	shen	733
 瘆	shen	478
@@ -6149,6 +6153,7 @@ vocabulary: essay-zh-hans
 荑	ti	1744
 醍	ti	1453
 悌	ti	1330
+媞	ti	1080
 鹈	ti	579
 绨	ti	222
 锑	ti	173
@@ -6731,8 +6736,8 @@ vocabulary: essay-zh-hans
 柙	xia	216
 叚	xia	7
 翈	xia	0
-现	xian	4161139
 先	xian	1662684
+现	xian	1161139
 显	xian	763327
 线	xian	539444
 险	xian	386142
@@ -7068,7 +7073,6 @@ vocabulary: essay-zh-hans
 瑄	xuan	2337
 烜	xuan	1568
 癣	xuan	885
-嬛	xuan	405
 禤	xuan	323
 谖	xuan	320
 儇	xuan	278
@@ -7358,6 +7362,7 @@ vocabulary: essay-zh-hans
 已	yi	3720796
 意	yi	3668831
 衣	yi	974727
+亿	yi	843650
 易	yi	690500
 依	yi	679811
 义	yi	667264
@@ -7381,7 +7386,6 @@ vocabulary: essay-zh-hans
 姨	yi	115750
 怡	yi	96402
 抑	yi	84901
-亿	yi	84365
 毅	yi	73576
 役	yi	72621
 译	yi	60762

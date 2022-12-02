@@ -1,25 +1,16 @@
 # Rime dictionary
 # encoding: utf-8
 #
+#
 # https://github.com/iDvel/rime-ice
 # ------- 一些杂项，按需选择 -------
 #
+#
 ---
 name: others
-version: "2022-09-01"
+version: "2022-10-03"
 sort: by_weight
-vocabulary: essay-zh-hans
 ...
-##### 方便词（已经在 custom_phrase 写过了，这里再写一遍，可以让这些字词参与组词）
-# 双拼应该注释掉这几行
-一	i
-有	u
-一个	ig
-有一个	uig
-有个	ug
-又有	uu
-
-
 ##### 容错词
 # 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 main 中实现
 # ---
@@ -96,6 +87,9 @@ vocabulary: essay-zh-hans
 阿房宫赋	a pang gong fu
 阿房宫赋	e fang gong fu
 阿房宫赋	a fang gong fu
+# 「伯伯」方言
+伯伯	bo bo
+伯伯	bai bai
 
 
 ##### 叠字
@@ -153,7 +147,7 @@ vocabulary: essay-zh-hans
 三个飛	san ge fei
 三个香
 三个马
-三个魚
+三个魚	san ge yu
 三个鹿
 三个龍	san ge long
 三个个
@@ -252,7 +246,7 @@ vocabulary: essay-zh-hans
 四个屮	si ge cao
 四个火
 四个牛
-四个魚
+四个魚	si ge yu
 四个月
 四个日
 四个曰
@@ -282,5 +276,5 @@ vocabulary: essay-zh-hans
 四个龍	si ge long
 四个土
 # 其他。。。
-嫐	nv nan nv
-嬲	nan nv nan
+男女男
+女男女
