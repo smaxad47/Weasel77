@@ -8,12 +8,14 @@
 #
 ---
 name: others
-version: "2022-10-03"
+version: "2023-06-13"
 sort: by_weight
 ...
 ##### 容错词
-# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 main 中实现
+# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 base 中实现
 # ---
+雪佛兰	xue fo lan
+雪佛兰	xue fu lan
 # 「馄饨」，正确是 tun，北方口语是 dun
 馄饨	hun tun
 馄饨	hun dun
@@ -66,6 +68,8 @@ sort: by_weight
 一骑红尘妃子笑	yi ji hong chen fei zi xiao
 千里走单骑	qian li zou dan qi
 千里走单骑	qian li zou dan ji
+一骑当千	yi qi dang qian
+一骑当千	yi ji dang qian
 # 「道行」，正确是 heng，但「道行hang」比较流行
 道行	dao heng
 道行	dao hang
@@ -90,6 +94,13 @@ sort: by_weight
 # 「伯伯」方言
 伯伯	bo bo
 伯伯	bai bai
+# 「南无阿弥陀佛」正确的是 na mo e mi tuo fo
+阿弥陀佛	e mi tuo fo
+阿弥陀佛	a mi tuo fo
+南无阿弥陀佛	na mo e mi tuo fo
+南无阿弥陀佛	na mo a mi tuo fo
+南无阿弥陀佛	nan wu e mi tuo fo
+南无阿弥陀佛	nan wu a mi tuo fo
 
 
 ##### 叠字
@@ -227,7 +238,6 @@ sort: by_weight
 三个䖝	san ge chong
 三个丿	san ge pie
 三个户
-三个日
 三个瓜
 三个鸟
 三个米
@@ -249,7 +259,6 @@ sort: by_weight
 四个魚	si ge yu
 四个月
 四个日
-四个曰
 四个林
 四个水
 四个石

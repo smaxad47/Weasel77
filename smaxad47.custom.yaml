@@ -12,13 +12,13 @@ patch:
     db_class: stabledb
     enable_completion: false
     enable_sentence: false
-    initial_quality: 1
+    initial_quality: 1.2
   melt_eng:
     dictionary: melt_eng # 挂载英文主词库 melt_eng.dict.yaml
     spelling_hints: 9
     enable_completion: true # 补全提示
     enable_sentence: false  # 禁止造句
     enable_user_dict: false # 禁用用户词典
-    initial_quality: -1
+    initial_quality: 1.1
   
 
