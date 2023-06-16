@@ -20,6 +20,9 @@ switches:
     states: [ 半角, 全角 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
+  - name: emoji
+    states: [ 💀, 😄 ]
+    reset: 1
 
 engine:
   processors:
@@ -41,6 +44,8 @@ engine:
     - punct_translator
     - script_translator
     - reverse_lookup_translator
+  filters:
+    - simplifier@emoji    
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -94,3 +99,9 @@ recognizer:
     # this change.
     punct: "^/([0-9]+[a-z]*|[a-z]+)$"
     reverse_lookup: "`[a-z]*'?$"
+
+
+# Emoji
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji

@@ -17,8 +17,7 @@
 
 
 # 文件配置来自
-rime/rime-pinyin-simp
-iDvel/rime-ice
-BlindingDark/rime-easy-en
-wongdean/rime-settings
+iDvel/rime-ice  
+BlindingDark/rime-easy-en  
+wongdean/rime-settings  
 LufsX/rime
