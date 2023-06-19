@@ -19,9 +19,13 @@ patch:
   # "style/inline_preedit": true
 color_font:
   style/color_font: true
-  style/font_face: "NotFont, Noto Color Emoji SVG:1f1e0:1f1ff, Segoe UI Emoji:80, LXGW Wenkai Narrow, Microsoft Yahei, 全宋体-1, 全宋体-2, 全宋体-3, 全宋体-F, 全宋体-X, 全宋体(调和), 全宋体(等宽)"
-  style/label_font_face: "NotFont, Noto Color Emoji SVG:80, Segoe UI Emoji:80, LXGW Wenkai Narrow, Microsoft Yahei, 全宋体-1, 全宋体-2, 全宋体-3, 全宋体-F, 全宋体-X, 全宋体(调和), 全宋体(等宽)"
-  style/comment_font_face: "NotFont, Noto Color Emoji SVG:80, Segoe UI Emoji:80, LXGW Wenkai Narrow, Microsoft Yahei, 全宋体-1, 全宋体-2, 全宋体-3, 全宋体-F, 全宋体-X, 全宋体(调和), 全宋体(等宽)"
+  # style/font_face: "NotFont, Noto Color Emoji SVG:1f1e0:1f1ff, Segoe UI Emoji:80, LXGW Wenkai Narrow, Microsoft Yahei, 全宋体-1, 全宋体-2, 全宋体-3, 全宋体-F, 全宋体-X, 全宋体(调和), 全宋体(等宽)"
+  # style/label_font_face: "NotFont, Noto Color Emoji SVG:80, Segoe UI Emoji:80, LXGW Wenkai Narrow, Microsoft Yahei, 全宋体-1, 全宋体-2, 全宋体-3, 全宋体-F, 全宋体-X, 全宋体(调和), 全宋体(等宽)"
+  # style/comment_font_face: "NotFont, Noto Color Emoji SVG:80, Segoe UI Emoji:80, LXGW Wenkai Narrow, Microsoft Yahei, 全宋体-1, 全宋体-2, 全宋体-3, 全宋体-F, 全宋体-X, 全宋体(调和), 全宋体(等宽)"
+  style/font_face: "NotFont, Noto Color Emoji SVG:1f1e0:1f1ff, Segoe UI Emoji:80, LXGW Wenkai, Microsoft Yahei"
+  style/label_font_face: "NotFont, Noto Color Emoji SVG:80, Segoe UI Emoji:80, LXGW Wenkai, Microsoft Yahei"
+  style/comment_font_face: "NotFont, Noto Color Emoji SVG:80, Segoe UI Emoji:80, LXGW Wenkai, Microsoft Yahei"
+
 
 win11:    
   style/blur_window: true
