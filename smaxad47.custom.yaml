@@ -1,7 +1,7 @@
 patch:
   schema:
     name: ICE改
-  "translator/dictionary": smaxad47
+  # "translator/dictionary": smaxad47
   engine/+:
     translators/+:
       - table_translator@custom_phrase

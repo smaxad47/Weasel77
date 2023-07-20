@@ -32,7 +32,7 @@ win11:
   __include: color_font
   #style/font_point: 20
   #style/label_font_point: 20
-  style/mark_text: "☘"
+  style/mark_text: "🍌"
   #style/comment_font_point: 20
   style/horizontal: true
   style/inline_preedit: true
