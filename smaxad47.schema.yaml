@@ -23,6 +23,9 @@ switches:
   - name: emoji
     states: [ 💀, 😄 ]
     reset: 1
+  - name: traditionalization
+    states: [简, 繁]
+    reset: 0
 
 engine:
   processors:
@@ -46,6 +49,7 @@ engine:
     - reverse_lookup_translator
   filters:
     - simplifier@emoji    
+    - simplifier@traditionalize   
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -109,3 +113,10 @@ recognizer:
 emoji:
   opencc_config: emoji.json
   option_name: emoji
+
+# 简繁切换
+traditionalize:
+  option_name: traditionalization
+  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
+  tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
