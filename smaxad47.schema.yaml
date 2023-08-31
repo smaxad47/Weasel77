@@ -13,7 +13,8 @@ schema:
     - melt_eng
 
 switches:
-  - name: ascii_mode
+  - name: traditionalization
+    states: [简, 繁]
     reset: 0
     states: [ 中文, 西文 ]
   - name: full_shape
@@ -23,9 +24,9 @@ switches:
   - name: emoji
     states: [ 💀, 😄 ]
     reset: 1
-  - name: traditionalization
-    states: [简, 繁]
+  - name: ascii_mode
     reset: 0
+
 
 
 engine:
