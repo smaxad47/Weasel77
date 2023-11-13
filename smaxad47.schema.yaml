@@ -16,7 +16,6 @@ switches:
   - name: traditionalization
     states: [简, 繁]
     reset: 0
-    states: [ 中文, 西文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: ascii_punct
@@ -25,6 +24,7 @@ switches:
     states: [ 💀, 😄 ]
     reset: 1
   - name: ascii_mode
+    states: [ 中文, 西文 ]
     reset: 0
 
 
