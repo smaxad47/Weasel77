@@ -13,6 +13,12 @@ patch:
       ascii_mode: true
     conhost.exe:
       ascii_mode: true
+    nvim-qt.exe:
+      ascii_mode: true
+      vim_mode: true
+    nvim.exe:
+      ascii_mode: true
+      vim_mode: true
   
   # "style/color_scheme": psionics
   # "style/font_face": "Microsoft YaHei"
